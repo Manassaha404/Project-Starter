@@ -12,7 +12,7 @@ export const emailWorker = new Worker<EmailJobData>(
     try {
       if (type === "VERIFICATION") {
         await resend.emails.send({
-          from: "Vibe Check <verify@manasx.online>",
+          from: "App <verify@manasx.online>",
           to: email,
           subject: "Verify your email address",
           html: `
@@ -47,7 +47,7 @@ export const emailWorker = new Worker<EmailJobData>(
         console.log(`Sent verification email to ${email}`);
       } else if (type === "PASSWORD_RESET") {
         await resend.emails.send({
-          from: "Vibe Check <onboarding@manasx.online>",
+          from: "App <onboarding@manasx.online>",
           to: email,
           subject: "Reset your password",
           html: `

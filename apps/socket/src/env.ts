@@ -8,6 +8,7 @@ const envSchema = z.object({
     .enum(["development", "production", "test"])
     .optional()
     .default("development"),
+  REDIS_HOST: z.string().describe("Redis host").default("localhost"),
 });
 
 function createEnv(env: NodeJS.ProcessEnv) {

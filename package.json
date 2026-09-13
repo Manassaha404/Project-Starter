@@ -1,5 +1,5 @@
 {
-  "name": "VibeCheck",
+  "name": "App-Starter",
   "private": true,
   "scripts": {
     "build": "turbo run build",

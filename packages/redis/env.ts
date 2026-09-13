@@ -1,6 +1,8 @@
 import { z } from "zod";
 
-const envSchema = z.object({});
+const envSchema = z.object({
+  REDIS_HOST: z.string().describe("Redis host").default("localhost"),
+});
 
 function createEnv(env: NodeJS.ProcessEnv) {
   const safeParseResult = envSchema.safeParse(env);

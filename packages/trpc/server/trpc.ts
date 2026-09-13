@@ -7,7 +7,6 @@ import {
   generateAccessToken,
   generateRefreshToken,
 } from "./utils/jwt";
-import { AppError } from "@repo/error";
 
 export const tRPCContext = initTRPC
   .context<typeof createContext>()

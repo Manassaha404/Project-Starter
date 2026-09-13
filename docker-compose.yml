@@ -1,6 +1,4 @@
 networks:
-  edge:
-    external: true
 
 services:
   postgres:

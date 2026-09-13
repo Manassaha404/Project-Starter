@@ -5,7 +5,6 @@ const envSchema = z.object({
   JWT_REFRESH_TOKEN_SERECT: z.string(),
   JWT_ACCESS_TOKEN_EXPIRY: z.string(),
   JWT_REFRESH_TOKEN_EXPIRY: z.string(),
-  RESEND_API_KEY: z.string(),
 });
 
 function createEnv(env: NodeJS.ProcessEnv) {

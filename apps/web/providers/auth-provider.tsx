@@ -45,7 +45,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         email: data.users.email,
         fullName: data.users.firstName + " " + data.users.lastName,
         username: data.users.username,
-        isGoogleDriveConnected: data?.isGoogleDriveConnected,
         avatarUrl: data?.users.avatarUrl,
       });
       setInitialized(true);

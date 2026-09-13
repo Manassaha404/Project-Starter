@@ -195,10 +195,6 @@ class OauthService {
       return { userId: newUser.userId, isNewUser: true };
     });
   }
-
-  
-
-  
 }
 
 export default OauthService;

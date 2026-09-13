@@ -3,8 +3,6 @@
 import {
   QueryClient,
   QueryClientProvider,
-  MutationCache,
-  QueryCache,
 } from "@tanstack/react-query";
 import React, { useState } from "react";
 
